@@ -60,7 +60,7 @@
                                                 </constraints>
                                                 <state key="normal" image="Share"/>
                                                 <connections>
-                                                    <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zdD-sP-cQ3"/>
+                                                    <segue destination="zMr-F7-tRy" kind="presentation" identifier="Social" id="HXv-44-cIX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -150,7 +150,82 @@
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="388" y="329"/>
+            <point key="canvasLocation" x="341" y="311"/>
+        </scene>
+        <!--Socialization-->
+        <scene sceneID="APD-OK-JlP">
+            <objects>
+                <viewController id="MVi-9b-nSs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cjx-rD-dVL"/>
+                        <viewControllerLayoutGuide type="bottom" id="NVW-qC-swU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="86w-KS-dnu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QQ-mQ-Fdn">
+                                <rect key="frame" x="143" y="269" width="35" height="30"/>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="DTX-Uh-p9J" kind="show" id="R8r-d7-5hs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.36983813659999998" green="0.94630872479999995" blue="0.13675380810000001" alpha="0.79719827590000003" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4QQ-mQ-Fdn" firstAttribute="centerX" secondItem="86w-KS-dnu" secondAttribute="centerX" id="nre-31-t43"/>
+                            <constraint firstItem="4QQ-mQ-Fdn" firstAttribute="centerY" secondItem="86w-KS-dnu" secondAttribute="centerY" id="sYi-u7-Pt8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Socialization" id="0QU-fi-Gu0">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="58C-SU-s4e"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8L-DK-kXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="311"/>
+        </scene>
+        <!--Details-->
+        <scene sceneID="lbW-Pi-TVt">
+            <objects>
+                <viewController id="DTX-Uh-p9J" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eny-wR-Bz1"/>
+                        <viewControllerLayoutGuide type="bottom" id="YhL-FB-Teo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N3a-dq-jVX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.39531774330000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Details" id="qPL-7o-O1E">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="dua-vP-sfg"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKM-ps-wun" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="311"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pgs-Yx-yPW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zMr-F7-tRy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Ex-sA-fwy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MVi-9b-nSs" kind="relationship" relationship="rootViewController" id="loz-kT-ILn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdK-bF-sAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="767" y="311"/>
         </scene>
     </scenes>
     <resources>

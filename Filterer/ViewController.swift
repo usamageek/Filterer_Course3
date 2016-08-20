@@ -120,5 +120,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return imageView
     }
+    
+    //new Controller scene
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
 }
 
